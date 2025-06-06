@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 90dvw;
+    max-width: 900px;
+    margin: 0px auto;
+}
+h1 {
+    text-align: center;
+    font-size: 5dvh;
+    margin-bottom: 100px;
+}
+
+#b1 {
+    background-color: aliceblue;
+    padding: 50px 0px;
+}
+#b1 .container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    .card {
+        background-color:#e2f3ff;
+        padding: 25px;
+    }
+    h2 {
+        margin: 25px 0px 5px;
+    }
+    p {
+        font-weight: lighter;
+    }
+}

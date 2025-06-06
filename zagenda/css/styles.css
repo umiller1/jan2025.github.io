@@ -21,6 +21,9 @@ h1, h2, h4 {
 img {
     width: 100%;
     object-fit: cover;
+    &.yonce {
+        object-fit: contain;
+    }
 }
 .contain {
     width: 90dvw;

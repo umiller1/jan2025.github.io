@@ -21,6 +21,9 @@ img {
     min-width: 0px;
     min-height: 0px;
     object-fit: cover;
+    &.yonce {
+        object-fit: contain;
+    }
 }
 .container {
     width: 90dvw;
