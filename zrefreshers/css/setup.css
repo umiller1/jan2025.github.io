@@ -17,3 +17,28 @@ section {
     min-height: 100px;
     padding: 15px;
 }
+#refresher-3 {
+    padding: 0px 25px;
+}
+/* Refresher Answers */
+#answers #refresher-3 {
+    background-color: lightgoldenrodyellow;
+    font-family: sans-serif;
+    #r3-h2 {
+        font-size: 50px;
+        font-family: monospace;
+    }
+    #r3-s1 {
+        font-size: 8dvh;
+        color: orange;
+    }
+    #r3-p1 {
+        font-style: italic;
+    }
+    #r3-s2 {
+        font-weight: bold;
+    }
+    #r3-p2 {
+        font-size: 25px;
+    }
+}

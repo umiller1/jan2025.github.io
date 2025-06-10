@@ -1,0 +1,30 @@
+#cp1 {
+    font-family: monospace;
+    text-align: center;
+}
+#cp1-a {
+    background-color: #71deff;
+    color: #111;
+    font-family: monospace;
+    text-align: center;
+    padding: 24px;
+}
+#cp1-b {
+    background-color: #ff90ad;
+    color: #111;
+    font-family: monospace;
+    text-align: center;
+    padding: 24px;
+}
+
+#cp2 {
+    font-family: cursive;
+    text-align: right;
+}
+#cp2-a {
+    background-color: #e10000;
+    color: white;
+    text-align: right;
+    font-family: cursive;
+    padding: 24px;
+}
