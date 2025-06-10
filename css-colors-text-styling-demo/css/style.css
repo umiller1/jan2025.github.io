@@ -1,0 +1,33 @@
+#p1 {
+    color: blue;
+    font-style: italic;
+    background-color: gold;
+    text-align: right;
+}
+#p2 {
+    color: #ff0000;
+    background-color: pink;
+    text-decoration: underline;
+    font-size: 24px;
+}
+#bold {
+    font-weight: bold;
+    background-color: green;
+    font-family: cursive;
+}
+
+#s1 {
+    color: crimson;
+    font-weight: bold;
+    font-size: 48px;
+}
+#s2 {
+    font-style: italic;
+    text-decoration: line-through;
+}
+#s3 {
+    background-color: yellow;
+}
+#s4 {
+    text-align: right;
+}
