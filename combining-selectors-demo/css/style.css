@@ -1,0 +1,16 @@
+#navbar {
+    background-color: blue;
+    padding: 24px;
+    text-align: center;
+}
+#navbar a {
+    color: white;
+}
+
+p a {
+    color: teal;
+}
+
+.warning a {
+    color: orange;
+}
