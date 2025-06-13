@@ -25,6 +25,20 @@ img {
         object-fit: contain;
     }
 }
+#unique {
+    background: -webkit-linear-gradient(40deg, #eb8108, #ad0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-variant: small-caps;
+    transition: letter-spacing 0.5s, font-size 1s;
+    &:hover {
+        letter-spacing: 0.125em;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
 .contain {
     width: 90dvw;
     max-width: 1440px;
