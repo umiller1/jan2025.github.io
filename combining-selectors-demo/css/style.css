@@ -14,3 +14,21 @@ p a {
 .warning a {
     color: orange;
 }
+
+p.warning {
+    background-color: rgb(230, 255, 194);
+}
+
+ul {
+    color: green;
+}
+ul a {
+    color: lime;
+}
+ul p a {
+    color: pink;
+}
+
+ul div a {
+    color: violet;
+}
