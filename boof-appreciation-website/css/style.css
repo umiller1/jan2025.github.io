@@ -45,9 +45,13 @@ h1 {
         border-bottom: 4px dotted #ff9641;
         img {
             height: 300px;
+            max-height: none;
         }
     }
     h2 {
         margin-top: 15px;
+    }
+    img {
+        max-height: 250px;
     }
 }
