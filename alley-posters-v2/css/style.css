@@ -1,0 +1,44 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+.multi-row {
+    display: inline-block;
+    margin-top: 35px;
+}
+.multi-row .display {
+    display: block;
+    margin: 0px 0px 10px;
+    font-size: 10px;
+    text-align: center;
+}
+.display {
+    margin: 80px 12px 0px;
+    border: 10px outset #a97b43;
+    width: 120px;
+    box-shadow: 2px 2px 3px #111e;
+    display: inline-block;
+    vertical-align: top;
+}
+.display div {
+    background-color: whitesmoke;
+    padding: 8px;
+    box-shadow: inset -2px -2px 3px #1115;
+}
+.display img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+#cat {
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+}
+#cat div, #cat img {
+    height: 100%;
+}
