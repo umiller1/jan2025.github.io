@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+#s1 {
+    background-color: lightpink;
+    padding: 40px 0px;
+}
+#s1 h2,
+#s1 p {
+    text-align: center;
+    max-width: 500px;
+}
+#s1 p {
+    margin: 15px;
+}
+#s1 img {
+    height: 400px;
+}
+
+#s2 {
+    background-color: lightcyan;
+    padding: 40px 0px;
+}
