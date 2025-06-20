@@ -144,9 +144,6 @@ header {
     .sbs {
         display: flex;
         gap: 25px;
-        > * {
-            flex: 1;
-        }
         .ic {
             height: auto;
         }
@@ -179,6 +176,9 @@ header {
         margin: 20px 0px;
         p {
             margin: 10px 0px;
+        }
+        .sbs > * {
+            flex: 1;
         }
     }
     h2 {
