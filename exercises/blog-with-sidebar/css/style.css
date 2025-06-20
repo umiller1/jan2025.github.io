@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    background-color: #222;
+    color: #fff;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: color 0.5s;
+    &:hover {
+        color: #ffdf52;
+    }
+}
+h1, h2 {
+    font-family: "Poiret One", sans-serif;
+}
+.container {
+    width: 85dvw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    margin-bottom: 25px;
+    #top-lvl {
+        background-color: #fff;
+        color: #111;
+        padding: 10px 0px;
+        background: linear-gradient(to right, #ffdf52, #ff0080);
+        .links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 25px;
+        }
+        a {
+            color: #fff;
+            font-size: 0.8rem;
+        }
+    }
+    #bttm-lvl {
+        padding: 15px 0px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    #logo {
+        margin-right: auto;
+        span {
+            display: block;
+            background: linear-gradient(120deg, #ffdf52, #ff0080);
+            width: 60px;
+            height: 40px;
+        }
+    }
+}
+
+#grid-layout .container{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:
+        "main side"
+    ;
+    gap: 80px;
+}
+
+#sidebar {
+    grid-area: side;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    ul {
+        background-color: #111;
+        color: #fff;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    ul li {
+        padding: 25px;
+        position: relative;
+        z-index: 1;
+        &:nth-of-type(2n)::before {
+            background-color: #00eeff;
+        }
+        &:nth-of-type(3n)::before {
+            background-color: #ffdf52;
+        }
+        &:nth-of-type(4n)::before {
+            background-color: #15ff00;
+        }
+        &::before {
+            content: "";
+            background-color: #ff0080;
+            display: block;
+            height: 100%;
+            width: 8px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            transition: width 1s;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+        &:hover a {
+            color: #111;
+        }
+    }
+    ul a {
+        line-height: 1.5em;
+    }
+}
+
+#main {
+    grid-area: main;
+    .sbs {
+        display: flex;
+        gap: 25px;
+        > * {
+            flex: 1;
+        }
+        .ic {
+            height: auto;
+        }
+    }
+    #intro {
+        border-bottom: 3px solid #ffdf52;
+        border-image: linear-gradient(to right, #ffdf52, #ff0080) 1;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+    }
+    .byline {
+        gap: 10px;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3rem;
+        margin: 15px 0px;
+    }
+    .ic {
+        height: 600px;
+        img {
+            height: 100%;
+        }
+    }
+    #short-desc {
+        font-size: 1.5rem;
+        margin: 15px 0px;
+    }
+    .copy {
+        margin: 20px 0px;
+        p {
+            margin: 10px 0px;
+        }
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+    blockquote {
+        border-left: 3px solid #ffdf52;
+        border-image: linear-gradient(to bottom, #ffdf52, #ff0080) 1;
+        font-size: 1.25rem;
+        padding-left: 20px;
+        margin: 25px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            content: open-quote;
+            position: absolute;
+            left: 0px;
+            top: -2rem;
+            font-size: 5em;
+            opacity: 0.2;
+            z-index: 1;
+        }
+    }
+}
