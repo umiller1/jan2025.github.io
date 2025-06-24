@@ -1,21 +1,44 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body {
-    margin: 0px;
     font-family: sans-serif;
     background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100dvh;
 }
 img {
     width: 100%;
     object-fit: cover;
 }
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffabbd;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: #222;
+    font-weight: bold;
+    border: 3px solid #ffabbd;
+    font-size: 1.25rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #ffabbd;
+}
+
 #page-layout {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     width: 90dvw;
-    max-width: 900px;
-    margin: 25px auto;
+    height: 95dvh;
+    max-width: 1440px;
+    margin: 0px auto;
     border: 2px solid #ffabbd;
     border-image: 
         linear-gradient(
@@ -28,10 +51,19 @@ img {
 }
 #page-layout > div {
     padding: 25px;
+    &:first-child {
+        padding-right: 0px;
+    }
 }
 #page-layout #c1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 #page-layout #c2 {
+    img {
+        height: 100%;
+    }
 }
 #page-layout #c3 {
     background-color: #ffabbd;
@@ -42,4 +74,69 @@ img {
             #ffedf1,
             #ffabbd)
         ;
+}
+h1 {
+    font-size: 3rem;
+}
+#c3 p {
+    margin: 10px 0px 20px;
+}
+#seller {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 25px 0px;
+}
+#seller a {
+    text-decoration: none;
+}
+#seller .base-info,
+#seller .links {
+    display: flex;
+    align-items: center;
+}
+.base-info .image-container {
+    flex: 1;
+    background: 
+        linear-gradient(
+            30deg, 
+            #ffabbd, 
+            #ffedf1,
+            #ffabbd)
+        ;
+    aspect-ratio: 1 / 1;
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.base-info img {
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.base-info h3 {
+    flex: 2;
+    font-size: 1.25rem;
+}
+.base-info h3 a {
+    color: #00868e;
+}
+#seller .links {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+#seller .links a {
+    font-size: 1.25rem;
+    color: #222;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    .btn {
+        flex: 1;
+        text-align: center;
+    }
 }
