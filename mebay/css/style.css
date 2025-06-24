@@ -4,28 +4,42 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: #222;
 }
 img {
     width: 100%;
     object-fit: cover;
 }
-.container {
-    width: 90vw;
-    max-width: 900px;
-    margin: 0px auto;
-}
-#page-layout .container {
+#page-layout {
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
-    gap: 50px;
+    width: 90dvw;
+    max-width: 900px;
+    margin: 25px auto;
+    border: 2px solid #ffabbd;
+    border-image: 
+        linear-gradient(
+            30deg, 
+            #ffabbd, 
+            #ffedf1,
+            #ffabbd)
+            1
+        ;
 }
-#page-layout {
-    background-color: pink;
+#page-layout > div {
+    padding: 25px;
 }
-
-.container > div {
-    border: 1px solid black;
+#page-layout #c1 {
 }
-#c1 img {
-    border: 5px ridge red;
+#page-layout #c2 {
+}
+#page-layout #c3 {
+    background-color: #ffabbd;
+    background: 
+        linear-gradient(
+            30deg, 
+            #ffabbd, 
+            #ffedf1,
+            #ffabbd)
+        ;
 }
