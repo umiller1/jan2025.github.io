@@ -1,0 +1,71 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+.card-style-2 {
+    background-color: white;
+    border-radius: 36px;
+    padding: 24px;
+    max-width: 350px;
+    margin: 16px;
+}
+
+.card-style-2 .animagram-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-style-2 .animagram-header .brand-name {
+    font-size: 28px;
+}
+
+.card-style-2 .profile-pic-container {
+    padding: 36px 36px 0px;
+    text-align: center;
+}
+.card-style-2 .profile-pic-container img {
+    width: 200px;
+    height: 200px;
+}
+.card-style-2 h2,
+.card-style-2 p {
+    text-align: center;
+    padding: 0px 36px;
+}
+
+.card-style-2 .animagram-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    font-size: 24px;
+}
+
+/* 
+    Three Primary Ways to Center Elements Based On
+    Their Setup.
+
+    Text-align: center; will any text that is inside
+    of the container it is applied to. Now, text align
+    center will also work on inline objects such as
+    spans and img elements. Text align will also transcend
+    to any descendants no matter how deep.
+
+    Width property + Margin property with left and right set
+    to auto. For this to work, the element has these styles
+    MUST be a block, flex, or grid element. Will not work on any 
+    other element.
+
+    IF you are looking to center CHILDREN elements inside of
+    a container element. This will be done on the container element
+    itself. You MUST have either display: flex; OR display: grid;
+    property on that container element, and then you can use
+    justify-content OR align-items OR both to horizontally or vertically
+    or both horizontall and vertically center the CHILDREN elements within
+    that container.
+*/
