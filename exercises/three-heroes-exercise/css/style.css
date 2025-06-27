@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+.hero {
+    height: 100vh;
+}
+
+#hero-1 {
+    background-image: url("../images/loz.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+#hero-1 .container {
+    width: max-content;
+    margin: 0px;
+    background-color: #78e4ff55;
+    padding: 50px 50px 50px 5vw;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+#hero-1 h1 {
+    font-size: 3rem;
+}
+#hero-1 p {
+    margin: 10px 0px 25px;
+}
+#hero-1 a {
+    display: inline-block;
+    background-color: #00694b;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    border: 2px solid #00694b;
+    transition: background-color 0.5s, color 0.5s;
+}
+#hero-1 a:hover {
+    background-color: transparent;
+    color: #00694b;
+}
+#hero-1 .container img {
+    position: absolute;
+    top: -50px;
+    right: -60px;
+    max-width: 100px;
+}
+#hero-1 .container img:nth-child(2) {
+    right: -70px;
+    z-index: -1;
+    filter: hue-rotate(105deg) blur(4px);
+}

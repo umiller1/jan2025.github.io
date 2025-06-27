@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#hero-1 {
+    background-image: url("../images/lizard.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#hero-1 h1 {
+    font-size: 120px;
+    position: absolute;
+    left: 20%;
+}
+
+#hero-2 {
+    background-image: url("../images/lonely-ocean.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+#hero-2 h2 {
+    font-size: 72px;
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+}
+#hero-2 h4 {
+    font-size: 24px;
+    position: absolute;
+    right: 20%;
+    bottom: 47%;
+}
+#hero-2 a {
+    font-size: 14px;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+    position: absolute;
+    right: 20%;
+    bottom: 41%;
+}
+
+#hero-3 {
+    height: 100vh;
+    background-image: url("../images/orange-wildflowers.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#hero-3 .hero-content {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+#hero-3 h2 {
+    font-size: 72px;
+}
+#hero-3 h4 {
+    font-size: 24px;
+}
+#hero-3 a {
+    font-size: 14px;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 24px;
+}
+
+#hero-4 {
+    height: 100vh;
+    background-image: url("../images/stars-on-velvet.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero-4 .hero-content {
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+#hero-4 h2 {
+    font-size: 72px;
+    margin-bottom: 36px;
+}
+#hero-4 h4 {
+    font-size: 24px;
+    margin: 0px;
+}
+#hero-4 a {
+    font-size: 14px;
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 24px;
+    margin: 36px 12px 0px;
+}
+
+.parallax {
+    height: 50vh;
+    margin: 100px 0px;
+    background-image: url("../images/emerald-seas.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
