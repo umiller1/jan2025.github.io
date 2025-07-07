@@ -36,7 +36,7 @@ img {
     padding: 0px 10px;
     transition: letter-spacing 0.5s, font-size 1s;
     &:hover {
-        letter-spacing: 0.125em;
+        letter-spacing: 5px;
         cursor: pointer;
     }
 }
