@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Cherry+Bomb+One&family=Chicle&family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    background-color: #111;
+    color: #fefefe;
+}
+.contain {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+a {
+    
+}
+
+/* HEADER */
+header {
+    position: relative;
+}
+/* NAV */
+nav .contain {
+    display: flex;
+}
