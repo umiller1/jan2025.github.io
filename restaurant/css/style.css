@@ -10,20 +10,59 @@ body {
     background-color: #111;
     color: #fefefe;
 }
+a {
+    color: #fefefe;
+    display: inline-block;
+    text-decoration: none;
+}
 .contain {
     width: 90%;
     max-width: 1280px;
     margin: 0px auto;
 }
-a {
-    
-}
+
 
 /* HEADER */
 header {
     position: relative;
+    #bb, #contact {
+        position: fixed;
+        top: 25px;
+        img {
+            width: 2rem;
+        }
+    }
+    #bb {
+        left: 5vw;
+    }
+    #contact {
+        right: 5vw;
+    }
 }
 /* NAV */
 nav .contain {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        font-size: 1.25rem;
+        margin-top: 15px;
+    }
+}
+
+/* HERO */
+.hero .contain {
+    display: flex;
+    gap: clamp(15px, 25px, 50px);
+    .card {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        padding: 25px 25px 0px 0px;
+    }
 }
