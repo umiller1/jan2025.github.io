@@ -9,6 +9,14 @@ body {
     font-size: 1.125rem;
     background-color: #111;
     color: #fefefe;
+    letter-spacing: 0.1em;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.image-container img {
+    height: 100%;
 }
 a {
     color: #fefefe;
@@ -52,17 +60,33 @@ nav .contain {
         font-size: 1.25rem;
         margin-top: 15px;
     }
+    .logo img {
+        max-width: 200px;
+        min-width: 100px;
+    }
 }
 
 /* HERO */
+.hero {
+    height: 50vh;
+    margin: 50px 0px 80px;
+}
 .hero .contain {
     display: flex;
     gap: clamp(15px, 25px, 50px);
+    height: 100%;
     .card {
         flex: 1;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
+        justify-content: flex-start;
         text-align: right;
         padding: 25px 25px 0px 0px;
+    }
+    #c1 {
+        background-image: 
+        linear-gradient(to bottom left, #010101, #01010155, #01010100),
+        url("../images/the-big-fish.jpg");
+        background-size: cover;
     }
 }
